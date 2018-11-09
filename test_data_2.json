@@ -1,0 +1,32 @@
+[
+  {
+    "addressStreet": "Aankomstpassage",
+    "addressHouseNumber": "10",
+    "addressPostalCode": "1118 AX",
+    "addressCity": "AnotherCity",
+    "addressGeolocationLat": "52.307138",
+    "addressGeolocationLng": "4.760019",
+    "distance": 0,
+    "type": "ING"
+  },
+  {
+    "addressStreet": "Aankomstpassage",
+    "addressHouseNumber": "10",
+    "addressPostalCode": "1118 AX",
+    "addressCity": "Schiphol",
+    "addressGeolocationLat": "52.307138",
+    "addressGeolocationLng": "4.760019",
+    "distance": 0,
+    "type": "ING"
+  },
+  {
+    "addressStreet": "Aankomstpassage",
+    "addressHouseNumber": "10",
+    "addressPostalCode": "1118 AX",
+    "addressCity": "Schiphol",
+    "addressGeolocationLat": "52.307138",
+    "addressGeolocationLng": "4.760019",
+    "distance": 0,
+    "type": "ING"
+  }
+]

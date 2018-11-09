@@ -1,0 +1,30 @@
+)]}',
+[{
+     "address": {
+       "street": "Aankomstpassage",
+       "housenumber": "1",
+       "postalcode": "1118 AX",
+       "city": "Schiphol",
+       "geoLocation": {
+         "lat": "52.307138",
+         "lng": "4.760019"
+       }
+     },
+     "distance": 0,
+     "type": "ING"
+   },
+   {
+       "address": {
+         "street": "Evert van Beekstraat",
+         "housenumber": "1",
+         "postalcode": "1118 CL",
+         "city": "Schiphol",
+         "geoLocation": {
+           "lat": "52.305891",
+           "lng": "4.752933"
+         }
+       },
+       "distance": 0,
+       "type": "ING"
+     }
+]

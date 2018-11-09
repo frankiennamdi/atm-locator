@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:DBNAME;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+
+logging:
+    level:
+      .: INFO
+      org.springframework.web: INFO
+
+server:
+  servlet:
+    context-path: /atm-locator
+
+camel:
+  springboot:
+    name: AtmLocator
+
+  component:
+    servlet:
+      mapping:
+        contextPath: /api/*
+
+atm-locator:
+  apiAddress: https://www.ing.nl/api/locator/atms/
