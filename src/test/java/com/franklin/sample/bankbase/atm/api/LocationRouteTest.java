@@ -41,8 +41,7 @@ public class LocationRouteTest {
     stubFor(get(urlEqualTo("/api/locator/atms/"))
             .willReturn(aResponse().withHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON)
                     .withBodyFile("service/Schiphol_ATM_Locations.txt")));
-    ATMInfo atmInfo = new ATMInfo("Aankomstpassage", "1", "1118 AX",
-            "TestCity", "52.307138", "4.760019", 0, "ING");
+    ATMInfo atmInfo = new ATMInfo("Aankomstpassage", "1", "1118 AX", "TestCity", "52.307138", "4.760019", 0, "ING");
     List<ATMInfo> atmInfoList = routeDispatcher
             .exchangeForList(LocationRoute.ATM_LOCATION_CREATION_ENDPOINT, ImmutableList.of(atmInfo));
     assertThat(atmInfoList.size(), is(1));

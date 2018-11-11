@@ -55,7 +55,7 @@ public class LocationControllerTest {
     mockMvc = MockMvcBuilders.webAppContextSetup(context).dispatchOptions(true).build();
     stubFor(get(urlEqualTo("/api/locator/atms/"))
             .willReturn(aResponse().withHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON)
-                    .withBodyFile("service/Schiphol_ATM_Locations.txt")));
+            .withBodyFile("service/Schiphol_ATM_Locations.txt")));
   }
 
   @Test

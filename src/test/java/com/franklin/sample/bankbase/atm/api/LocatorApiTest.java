@@ -74,8 +74,7 @@ public class LocatorApiTest {
 
   @Test
   public void testCreateAndListAtmInCity_withAuthorizedUser_andWithDuplicate() throws Exception {
-    ATMInfo atmInfo = new ATMInfo("Aankomstpassage", "1", "1118 AX",
-            "MyCity", "52.307138", "4.760019", 0, "ING");
+    ATMInfo atmInfo = new ATMInfo("Aankomstpassage", "1", "1118 AX", "MyCity", "52.307138", "4.760019", 0, "ING");
     HttpEntity<List<ATMInfo>> request = new HttpEntity<>(ImmutableList.of(atmInfo, atmInfo));
     ResponseEntity<List<ATMInfo>> rateResponse = restTemplate.exchange("/api/cities",
             HttpMethod.POST, request, new ParameterizedTypeReference<List<ATMInfo>>() {

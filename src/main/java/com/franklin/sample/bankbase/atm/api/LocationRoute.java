@@ -33,7 +33,7 @@ public class LocationRoute
 
     rest("/cities").description("atm services")
         .get("/{city}")
-        .description("atm locations listing __files.service")
+        .description("atm locations listing service")
         .route()
         .routeId("location_listing_api")
         .log("listing atm locations")
@@ -43,7 +43,7 @@ public class LocationRoute
 
         .post("/")
         .typeList(ATMInfo.class)
-        .description("atm locations creation __files.service")
+        .description("atm locations creation service")
         .route()
         .routeId("location_creation_api")
         .log("creating atm listings")
