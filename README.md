@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/frankiennamdi/atm-locator.svg?branch=master)](https://travis-ci.org/frankiennamdi/atm-locator)
+[![codecov](https://codecov.io/gh/frankiennamdi/atm-locator/branch/master/graph/badge.svg)](https://codecov.io/gh/frankiennamdi/atm-locator)
 
 # Required Technologies
 1. mvn
