@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/frankiennamdi/atm-locator.svg?branch=master)](https://travis-ci.org/frankiennamdi/atm-locator)
+
 # Required Technologies
 1. mvn
 2. Java 8.x - chosen for some of its appealing functionality like streams, functions and method references. 
