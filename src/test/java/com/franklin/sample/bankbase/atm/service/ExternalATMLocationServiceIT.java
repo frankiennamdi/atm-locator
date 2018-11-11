@@ -16,9 +16,11 @@ public class ExternalATMLocationServiceIT {
   public void testCanFindAtm() {
     LocationConfig locationConfig = new LocationConfig();
     locationConfig.setApiAddress("https://www.ing.nl/api/locator/atms/");
+
     ExternalATMLocationService externalATMLocationService = new ExternalATMLocationService(locationConfig);
     List<ATMInfo> atmInfoList = externalATMLocationService.findAtmByCity(ImmutableList.of("Schiphol"));
     Set<String> cities = atmInfoList.stream().map(ATMInfo::getAddressCity).collect(Collectors.toSet());
+
     assertThat(cities.size(), is(1));
   }
 }

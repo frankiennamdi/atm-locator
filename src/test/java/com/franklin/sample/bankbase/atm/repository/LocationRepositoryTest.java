@@ -37,7 +37,9 @@ public class LocationRepositoryTest {
     atm.setAddressGeolocationLng("4.760019");
     atm.setDistance(0);
     atm.setType("ING");
+
     List<ATM> items = locationRepository.findByAddressCityIn(ImmutableList.of("Schiphol"));
+
     assertThat(items, everyItem(isIn(ImmutableList.of(atm))));
   }
 }
